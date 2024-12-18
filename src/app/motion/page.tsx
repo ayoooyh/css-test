@@ -12,9 +12,6 @@ import React from "react";
 const textVariants = {
   hidden: { y: "100%" },
   visible: { y: "0%" },
-  default: {
-    immediate: true,
-  },
 };
 
 const Motion: React.FC = () => {
@@ -46,7 +43,7 @@ const Motion: React.FC = () => {
         className="bg-orange-400 fixed top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full h-full"
         style={{ clipPath }}
       >
-        <motion.h1 className="text-blue-700 font-bold text-3xl p-8 fixed -translate-x-1/2 -translate-y-1/2">
+        <motion.h1 className="text-blue-700 font-bold text-3xl p-8 fixed ">
           <span className="block overflow-hidden">
             <motion.span
               variants={textVariants}
